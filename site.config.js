@@ -18,6 +18,7 @@ const CONFIG = {
   blog: {
     title: "dywidendowo.pl",
     description: "Witaj na dywidendowo.pl!",
+    theme: "auto"
   },
 
   // CONFIG configration (required)
@@ -51,7 +52,7 @@ const CONFIG = {
     },
   },
   utterances: {
-    enable: true,
+    enable: false,
     config: {
       repo: process.env.NEXT_PUBLIC_UTTERANCES_REPO || "",
       "issue-term": "og:title",
