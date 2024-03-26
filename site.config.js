@@ -6,6 +6,7 @@ const CONFIG = {
     role: "inwestor",
     bio: "Staram się oszczędzać i inwestować jednocześnie.",
     email: "fundsparkle-tech@gmail.com",
+    github: "fundsparkle",
     // twitter: ""
   },
   projects: [
