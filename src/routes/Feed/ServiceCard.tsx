@@ -4,6 +4,7 @@ import { AiFillCodeSandboxCircle } from "react-icons/ai"
 import styled from "@emotion/styled"
 import { Emoji } from "src/components/Emoji"
 
+// todo may be used later on
 const ServiceCard: React.FC = () => {
   if (!CONFIG.projects) return null
   return (

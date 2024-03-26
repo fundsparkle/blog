@@ -2,9 +2,9 @@ const CONFIG = {
   // profile setting (required)
   profile: {
     name: "dywidendowo.pl",
-    image: "/notion-avatar.svg", // If you want to create your own notion avatar, check out https://notion-avatar.vercel.app
+    image: "notion-avatar.svg", // If you want to create your own notion avatar, check out https://notion-avatar.vercel.app
     role: "inwestor",
-    bio: "Staram się oszczędzać i inwestować jednocześnie.",
+    bio: "Pokazuję swoją drogę do pasywnego dochodu z dywidend.",
     email: "fundsparkle-tech@gmail.com",
     github: "fundsparkle",
     // twitter: ""
