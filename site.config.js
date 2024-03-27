@@ -4,7 +4,7 @@ const CONFIG = {
     name: "dywidendowo.pl",
     image: "/avatar.svg", // If you want to create your own notion avatar, check out https://notion-avatar.vercel.app
     role: "Inwestor",
-    bio: "Pokazuję swoją drogę do pasywnego dochodu z dywidend.",
+    bio: "Pokazuję swoją drogę do pasywnego dochodu 1000$ miesięcznie z dywidend.",
     email: "fundsparkle-tech@gmail.com",
     github: "fundsparkle",
     // twitter: ""
@@ -53,7 +53,7 @@ const CONFIG = {
     },
   },
   utterances: {
-    enable: true,
+    enable: false,
     config: {
       repo: process.env.NEXT_PUBLIC_UTTERANCES_REPO || "",
       "issue-term": "og:title",
@@ -61,10 +61,10 @@ const CONFIG = {
     },
   },
   cusdis: {
-    enable: false,
+    enable: true,
     config: {
       host: "https://cusdis.com",
-      appid: "", // Embed Code -> data-app-id value
+      appid: "77360d84-acbe-42f6-aacf-d63c67c379c1", // Embed Code -> data-app-id value
     },
   },
   isProd: process.env.VERCEL_ENV === "production", // distinguish between development and production environment (ref: https://vercel.com/docs/environment-variables#system-environment-variables)
