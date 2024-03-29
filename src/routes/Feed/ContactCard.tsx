@@ -25,7 +25,7 @@ const ContactCard: React.FC = () => {
                 <a className="twitter-follow-button"
                    href="https://twitter.com/dywidendowopl"
                    data-size="large">
-                    Follow @TwitterDev
+                    Follow @dywidendowopl
                 </a>
             </StyledWrapper>
         </>
