@@ -22,7 +22,6 @@ const ContactCard: React.FC = () => {
                         <div className="name">email</div>
                     </a>
                 )}
-
                 <a
                     href="https://twitter.com/dywidendowopl"
                     rel="noreferrer"
