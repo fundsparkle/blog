@@ -4,7 +4,7 @@ const CONFIG = {
     name: "dywidendowo.pl",
     image: "/avatar.svg", // If you want to create your own notion avatar, check out https://notion-avatar.vercel.app
     role: "Inwestor",
-    bio: "Pokazuję swoją drogę do pasywnego dochodu 1000$ miesięcznie z dywidend.",
+    bio: "Pokazuję swoją drogę do pasywnego dochodu 2500zł miesięcznie z dywidend.",
     email: "fundsparkle-tech@gmail.com",
     github: "fundsparkle",
     // twitter: ""

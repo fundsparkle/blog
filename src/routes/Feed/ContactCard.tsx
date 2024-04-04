@@ -1,6 +1,6 @@
 import styled from "@emotion/styled"
 import React from "react"
-import {AiOutlineMail,} from "react-icons/ai"
+import {AiFillTwitterCircle, AiOutlineMail,} from "react-icons/ai"
 import {CONFIG} from "site.config"
 import {Emoji} from "src/components/Emoji"
 
@@ -22,10 +22,15 @@ const ContactCard: React.FC = () => {
                         <div className="name">email</div>
                     </a>
                 )}
-                <a className="twitter-follow-button"
-                   href="https://twitter.com/dywidendowopl"
-                   data-size="large">
-                    Follow @dywidendowopl
+
+                <a
+                    href="https://twitter.com/dywidendowopl"
+                    rel="noreferrer"
+                    target="_top"
+                    css={{overflow: "hidden"}}
+                >
+                    <AiFillTwitterCircle className="icon"/>
+                    <div className="name">Follow @dywidendowopl</div>
                 </a>
             </StyledWrapper>
         </>
