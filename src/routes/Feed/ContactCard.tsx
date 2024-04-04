@@ -11,17 +11,6 @@ const ContactCard: React.FC = () => {
                 <Emoji>💬</Emoji> Kontakt
             </StyledTitle>
             <StyledWrapper>
-                {CONFIG.profile.email && (
-                    <a
-                        href={`mailto:${CONFIG.profile.email}`}
-                        rel="noreferrer"
-                        target="_top"
-                        css={{overflow: "hidden"}}
-                    >
-                        <AiOutlineMail className="icon"/>
-                        <div className="name">email</div>
-                    </a>
-                )}
                 <a
                     href="https://twitter.com/dywidendowopl"
                     rel="noreferrer"
@@ -31,6 +20,17 @@ const ContactCard: React.FC = () => {
                     <AiFillTwitterCircle className="icon"/>
                     <div className="name">Follow @dywidendowopl</div>
                 </a>
+                {CONFIG.profile.email && (
+                    <a
+                        href={`mailto:${CONFIG.profile.email}`}
+                        rel="noreferrer"
+                        target="_top"
+                        css={{overflow: "hidden"}}
+                    >
+                        <AiOutlineMail className="icon"/>
+                        <div className="name">Napisz do mnie maila</div>
+                    </a>
+                )}
             </StyledWrapper>
         </>
     )
