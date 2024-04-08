@@ -32,7 +32,6 @@ const ContactCard: React.FC = () => {
                     </a>
                 )}
             </StyledWrapper>
-
         </>
     )
 }
