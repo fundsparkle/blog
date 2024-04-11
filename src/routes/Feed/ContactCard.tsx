@@ -31,6 +31,7 @@ const ContactCard: React.FC = () => {
                         <div className="name">Napisz do mnie maila</div>
                     </a>
                 )}
+
             </StyledWrapper>
         </>
     )
