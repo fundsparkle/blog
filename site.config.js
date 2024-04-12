@@ -5,7 +5,7 @@ const CONFIG = {
     image: "/avatar.svg", // If you want to create your own notion avatar, check out https://notion-avatar.vercel.app
     role: "Inwestor",
     bio: "Pokazuję swoją drogę do pasywnego dochodu 2500zł miesięcznie z dywidend.",
-    email: "fundsparkle-tech@gmail.com",
+    email: "dywidendowo@gmail.com",
     github: "fundsparkle",
     // twitter: ""
   },
