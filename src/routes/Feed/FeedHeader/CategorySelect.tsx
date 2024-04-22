@@ -41,6 +41,7 @@ const CategorySelect: React.FC<Props> = () => {
           ))}
         </div>
       )}
+
     </StyledWrapper>
   )
 }
