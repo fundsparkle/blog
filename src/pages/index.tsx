@@ -8,6 +8,7 @@ import { queryKey } from "src/constants/queryKey"
 import { GetStaticProps } from "next"
 import { dehydrate } from "@tanstack/react-query"
 import { filterPosts } from "src/libs/utils/notion"
+import useScript from "../hooks/useScript";
 
 export const getStaticProps: GetStaticProps = async () => {
   const posts = filterPosts(await getPosts())
@@ -29,6 +30,7 @@ const FeedPage: NextPageWithLayout = () => {
     url: CONFIG.link,
   }
 
+  useScript('https://chimpstatic.com/mcjs-connected/js/users/7bae05486affa75147b4399b9/5fc5f7a7254ce202835f3e717.js')
   return (
     <>
       <MetaConfig {...meta} />
