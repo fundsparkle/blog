@@ -16,7 +16,7 @@ function FormComponent() {
         //         email
         //     }
         // })
-        router.push("/newsletter/success")
+        // router.push("/newsletter/success")
     }
 
     const handleClick = () => {

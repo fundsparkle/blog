@@ -3,16 +3,17 @@ import IllustrationDesktopURL from '../../../public/illustration-sign-up-desktop
 import Image from "next/image";
 
 function IllustrationImage() {
-    if (typeof window !== undefined){
+    // if (typeof window !== undefined){
+    //     return (
+    //         <div className="illustration-container">
+    //             <Image
+    //                 src={window.innerWidth >= 768 ? IllustrationDesktopURL : IllustrationMobileURL}
+    //                 alt='illustration image of statistics'
+    //             />
+    //         </div>
+    //     )
+    // } else
         return (
-            <div className="illustration-container">
-                <Image
-                    src={window.innerWidth >= 768 ? IllustrationDesktopURL : IllustrationMobileURL}
-                    alt='illustration image of statistics'
-                />
-            </div>
-        )
-    } else return (
         <div className="illustration-container">
             <Image
                 src={IllustrationDesktopURL}
