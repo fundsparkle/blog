@@ -1,8 +1,8 @@
-import IllustrationImage from '../../components/Newsletter/IllustrationImage'
 import FormComponent from '../../components/Newsletter/FormComponent'
 import ListItems from '../../components/Newsletter/ListItems'
+import IllustrationImage from "../../components/Newsletter/IllustrationImage";
 
-function Index() {
+export default function NewsletterSignUp() {
     return (
         <div className='sign-up-container'>
             <IllustrationImage />
@@ -18,5 +18,3 @@ function Index() {
         </div>
     )
 }
-
-export default Index

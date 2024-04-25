@@ -1,10 +1,9 @@
 import * as React from "react"
-import {useNavigate} from 'react-router-dom'
+import {router} from "next/client";
 
 function FormComponent() {
     const [isInvalid, setIsInvalid] = React.useState(false)
     const inputRef = React.createRef<HTMLInputElement>()
-    const navigate = useNavigate()
 
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault()
@@ -12,11 +11,12 @@ function FormComponent() {
         const formElem = e.currentTarget as HTMLFormElement
         const [[, email]] = new FormData(formElem)
 
-        navigate("/newsletter-sign-up-main/success", {
-            state: {
-                email
-            }
-        })
+        // navigate("/newsletter-sign-up-main/success", {
+        //     state: {
+        //         email
+        //     }
+        // })
+        router.push("/newsletter/success")
     }
 
     const handleClick = () => {

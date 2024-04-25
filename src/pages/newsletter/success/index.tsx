@@ -1,10 +1,10 @@
-import { useLocation } from 'react-router-dom'
+// import { useLocation } from 'react-router-dom'
 
 import successIconURL from '../../../../public/icon-success.svg'
 
-function SuccessComponent() {
-    const location = useLocation()
-    const {email} = location.state
+export default function SuccessComponent() {
+    // const location = useLocation()
+    // const {email} = location.state
 
     return (
         <div className="success-container">
@@ -16,10 +16,9 @@ function SuccessComponent() {
             </div>
 
             <h1>Thanks for subscribing!</h1>
-            <p>A confirmation email has been sent to <span>{email}</span>. Please open it and click the button inside to confirm your subscription.</p>
+            {/*<p>A confirmation email has been sent to <span>{email}</span>. Please open it and click the button inside to confirm your subscription.</p>*/}
+            <p>A confirmation email has been sent to your email. Please open it and click the button inside to confirm your subscription.</p>
             <button className='cta-btn'>Dismiss message</button>
         </div>
     )
 }
-
-export default SuccessComponent
