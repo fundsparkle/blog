@@ -14,11 +14,11 @@ function App({ Component, pageProps }: AppPropsWithLayout) {
     <QueryClientProvider client={queryClient}>
       <Hydrate state={pageProps.dehydratedState}>
           <BrowserRouter>
-              <RootLayout>
-                  {getLayout(<Component {...pageProps} />)}
-                  <Analytics />
-              </RootLayout>
               <Routes>
+                  <RootLayout>
+                      {getLayout(<Component {...pageProps} />)}
+                      <Analytics />
+                  </RootLayout>
                   <Route path='/newsletter-sign-up-main' element={<SignUpContainer />} />
                   <Route path='/newsletter-sign-up-main/success' element={<SuccessComponent />} />
               </Routes>
