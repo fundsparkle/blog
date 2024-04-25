@@ -1,5 +1,5 @@
 import IllustrationMobileURL from '../../../public/illustration-sign-up-mobile.svg'
-import IllustrationDesktopURL from '../../../public//illustration-sign-up-desktop.svg'
+import IllustrationDesktopURL from '../../../public/illustration-sign-up-desktop.svg'
 
 function IllustrationImage() {
     return (

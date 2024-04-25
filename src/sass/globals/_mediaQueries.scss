@@ -1,0 +1,32 @@
+@media only screen and (min-width: 768px) {
+    body {
+        display: grid;
+        min-height: 100vh;
+        place-content: center;
+    }
+
+    .content {
+        padding: 3em !important;
+    }
+
+    div.success-container {
+        padding: 3em !important;
+        margin-inline: auto;
+        width: 50%;
+        height: 100% !important;
+        border-radius: 15px !important;
+    }
+
+    .sign-up-container {
+        display: flex;
+        flex-direction: row-reverse;
+        border-radius: 15px !important;
+        align-items: center;
+        width: 90%;
+        margin-inline: auto;
+    }
+
+    .illustration-container {
+        padding: 1em;
+    }
+}
