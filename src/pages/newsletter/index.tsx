@@ -1,8 +1,8 @@
-import IllustrationImage from './IllustrationImage'
-import FormComponent from './FormComponent'
-import ListItems from './ListItems'
+import IllustrationImage from '../../components/Newsletter/IllustrationImage'
+import FormComponent from '../../components/Newsletter/FormComponent'
+import ListItems from '../../components/Newsletter/ListItems'
 
-function SignUpContainer() {
+function Index() {
     return (
         <div className='sign-up-container'>
             <IllustrationImage />
@@ -19,4 +19,4 @@ function SignUpContainer() {
     )
 }
 
-export default SignUpContainer
+export default Index

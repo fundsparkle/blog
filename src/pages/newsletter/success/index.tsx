@@ -1,6 +1,6 @@
 import { useLocation } from 'react-router-dom'
 
-import successIconURL from '../../../public/icon-success.svg'
+import successIconURL from '../../../../public/icon-success.svg'
 
 function SuccessComponent() {
     const location = useLocation()
