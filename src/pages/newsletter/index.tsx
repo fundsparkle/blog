@@ -1,7 +1,3 @@
-import FormComponent from '../../components/Newsletter/FormComponent'
-import ListItems from '../../components/Newsletter/ListItems'
-import IllustrationImage from "../../components/Newsletter/IllustrationImage";
-
 export default function NewsletterSignUp() {
     return (
         <div className='sign-up-container'>
