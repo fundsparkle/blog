@@ -5,16 +5,11 @@ import IllustrationImage from "../../components/Newsletter/IllustrationImage";
 export default function NewsletterSignUp() {
     return (
         <div className='sign-up-container'>
-            <IllustrationImage />
-
-            <div className="content-container">
-                <div className="content">
-                    <h2>Stay updated!</h2>
-                    <p>Join 60,000+ product managers receiving monthly updates on:</p>
-                    <ListItems />
-                    <FormComponent />
-                </div>
-            </div>
+            <iframe width="540" height="305"
+                    src="https://6c25405f.sibforms.com/serve/MUIFAGh30jswQiwQXE3x0FqC2eIdS1d0Pfxu-7b0XcrMvJL9coqhxUkbyOD1w4uW-MrLMtvjGb7fpdGUYWPEvEjpWjcdVuG4FkBdKsQeytBQ6wJJGuj-jlweOQ5SA_kVyTE6896Da-LF7FNfEnOrlyTXUH0M766yKctLbro7ASgmXBy_pjgdcFdm5QE9Agk7Vy7hsjTMZYELXaxk"
+                    frameBorder="0" scrolling="auto" allowFullScreen
+                    style="display: block;margin-left: auto;margin-right: auto;max-width: 100%;">
+            </iframe>
         </div>
     )
 }
