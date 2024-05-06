@@ -9,7 +9,7 @@ export default function NewsletterSignUp() {
                     marginLeft: 'auto',
                     marginRight: 'auto',
                     maxWidth: '100%',
-                    height: "100vh"
+                    height: "50vh"
                 }}>
         </iframe>
         </div>
