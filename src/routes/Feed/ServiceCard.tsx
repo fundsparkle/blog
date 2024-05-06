@@ -27,6 +27,7 @@ const ServiceCard: React.FC = () => {
       </StyledWrapper>
     </>
   )
+
 }
 
 export default ServiceCard
