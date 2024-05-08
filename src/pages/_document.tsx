@@ -6,6 +6,9 @@ class MyDocument extends Document {
     return (
       <Html lang={CONFIG.lang}>
         <Head>
+            {/* eslint-disable-next-line @next/next/no-sync-scripts */}
+            <script id="cookieyes" type="text/javascript"
+                    src="https://cdn-cookieyes.com/client_data/181e020c77981d48ec1de3be/script.js"></script>
           <link rel="icon" href="/favicon.ico" />
           <link
             rel="apple-touch-icon"
