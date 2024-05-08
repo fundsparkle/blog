@@ -19,7 +19,7 @@ const CONFIG = {
   blog: {
     title: "dywidendowo.pl",
     description: "Witaj na dywidendowo.pl!",
-    theme: "auto"
+    theme: "light"
   },
 
   // CONFIG configration (required)
@@ -41,7 +41,7 @@ const CONFIG = {
     },
   },
   googleSearchConsole: {
-    enable: false,
+    enable: true,
     config: {
       siteVerification: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION || "",
     },
