@@ -13,8 +13,10 @@ export type MetaConfigProps = {
 
 const MetaConfig: React.FC<MetaConfigProps> = (props) => {
     return (
-        <>
             <Head>
+                {/* eslint-disable-next-line @next/next/no-sync-scripts */}
+                <script id="cookieyes" type="text/javascript"
+                        src="https://cdn-cookieyes.com/client_data/181e020c77981d48ec1de3be/script.js"></script>
                 <title>{props.title}</title>
                 <meta name="robots" content="follow, index"/>
                 <meta charSet="UTF-8"/>
@@ -39,9 +41,6 @@ const MetaConfig: React.FC<MetaConfigProps> = (props) => {
                     </>
                 )}
             </Head>
-            <Script id="cookieyes" type="text/javascript"
-                    src="https://cdn-cookieyes.com/client_data/181e020c77981d48ec1de3be/script.js"></Script>
-        </>
     )
 }
 
