@@ -15,7 +15,7 @@ export default function NewsletterSignUp() {
                             marginRight: 'auto',
                             maxWidth: '100%',
                             height: "90vh",
-                            borderRadius: "2%"
+                            borderRadius: "3%"
                         }}>
                 </iframe>
             </StyledWrapper>
