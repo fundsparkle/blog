@@ -8,7 +8,6 @@ export default function SuccessMessage() {
                 </div>
             </div>
         </StyledWrapper>
-
     )
 }
 const StyledWrapper = styled.div`
