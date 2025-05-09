@@ -19,7 +19,7 @@ const CONFIG = {
   blog: {
     title: "dywidendowo.pl",
     description: "Witaj na dywidendowo.pl!",
-    theme: "light"
+    theme: "auto"
   },
 
   // CONFIG configration (required)
