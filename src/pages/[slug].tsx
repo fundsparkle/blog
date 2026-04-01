@@ -11,6 +11,7 @@ import { queryKey } from "src/constants/queryKey"
 import { dehydrate } from "@tanstack/react-query"
 import usePostQuery from "src/hooks/usePostQuery"
 import { FilterPostsOptions } from "src/libs/utils/notion/filterPosts"
+import { stripUndefined } from "src/utils/json"
 
 const filter: FilterPostsOptions = {
   acceptStatus: ["Public", "PublicOnDetail"],
@@ -32,20 +33,26 @@ export const getStaticProps: GetStaticProps = async (context) => {
 
   const posts = await getPosts()
   const feedPosts = filterPosts(posts)
-  await queryClient.prefetchQuery(queryKey.posts(), () => feedPosts)
+  await queryClient.prefetchQuery({
+    queryKey: queryKey.posts(),
+    queryFn: () => feedPosts,
+  })
 
   const detailPosts = filterPosts(posts, filter)
   const postDetail = detailPosts.find((t: any) => t.slug === slug)
   const recordMap = await getRecordMap(postDetail?.id!)
 
-  await queryClient.prefetchQuery(queryKey.post(`${slug}`), () => ({
-    ...postDetail,
-    recordMap,
-  }))
+  await queryClient.prefetchQuery({
+    queryKey: queryKey.post(`${slug}`),
+    queryFn: () => ({
+      ...postDetail,
+      recordMap,
+    }),
+  })
 
   return {
     props: {
-      dehydratedState: dehydrate(queryClient),
+        dehydratedState: stripUndefined(dehydrate(queryClient)),
     },
     revalidate: CONFIG.revalidateTime,
   }
