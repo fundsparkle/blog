@@ -40,12 +40,11 @@ export const getPosts = async () => {
     for (let i = 0; i < pageIds.length; i++) {
       const id = pageIds[i]
       const properties = (await getPageProperties(id, block, schema)) || null
-      // Add fullwidth, createdtime to properties
-      properties.createdTime = new Date(
-        block[id].value?.created_time
-      ).toString()
-      properties.fullWidth =
-        (block[id].value?.format as any)?.page_full_width ?? false
+
+      if (!properties?.id) continue  // ← skip ghost blocks
+
+      properties.createdTime = new Date(block[id].value?.created_time).toString()
+      properties.fullWidth = (block[id].value?.format as any)?.page_full_width ?? false
 
       data.push(properties)
     }
@@ -58,6 +57,7 @@ export const getPosts = async () => {
     })
 
     const posts = data as TPosts
+    console.log("Posts with missing id:", posts.filter((p: any) => !p.id))
     return posts
   }
 }
