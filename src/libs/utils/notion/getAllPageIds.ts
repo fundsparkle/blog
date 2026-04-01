@@ -13,13 +13,15 @@ export default function getAllPageIds(
   let pageIds: ID[] = []
   if (viewId) {
     const vId = idToUuid(viewId)
-    pageIds = views[vId]?.blockIds
+    pageIds = views[vId]?.blockIds ?? []
   } else {
     const pageSet = new Set<ID>()
     Object.values(views).forEach((view: any) => {
-      view?.collection_group_results?.blockIds?.forEach((id: ID) =>
-        pageSet.add(id)
-      )
+      if (view?.collection_group_results?.blockIds) {
+        view.collection_group_results.blockIds.forEach((id: ID) => pageSet.add(id))
+      } else if (view?.blockIds) {
+        view.blockIds.forEach((id: ID) => pageSet.add(id))
+      }
     })
     pageIds = [...pageSet]
   }
